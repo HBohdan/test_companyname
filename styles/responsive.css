@@ -1,0 +1,263 @@
+
+.nav [type="checkbox"]{
+	display: none;
+}
+.toggleMenu {
+	display: none;
+	color: #EAE1D2;
+	font-family: 'Merriweather Sans', sans-serif;
+	cursor: pointer;
+	padding-left: 1rem;
+	position: relative;
+}
+.fa-bars {
+	position: absolute;
+	top: 0.27rem;
+	left: 0rem;
+}
+@media screen and (max-width: 1024px){
+	.portfolio__slider{
+	max-width: 30rem;	
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.wrap__content{
+		margin-left: 4rem;
+	}
+	.slider_1 .owl-nav{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.wrap {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+	.header__content {
+		position: relative;
+	}
+	.nav {
+		width: 3.6rem;
+	}	
+	.toggleMenu {
+		display: block;
+	}	
+	.nav__list {
+		display: none;
+	}
+	.toggle-Menu:checked ~ .nav__list {
+		display: block;
+		z-index: 10;
+		position: absolute;
+		background-color: #EAE1D2;
+		top: 3.1rem;
+		left: 0;
+		width: 98%;
+		margin: 0 1%;
+	}
+	.nav__item {
+	padding: 0.25rem 0 0.25rem 1.375rem;
+	}
+	.nav__item:nth-of-type(1n+2) {
+	border-top: 1px solid #D5CABA;
+	}
+	.toggleSubmenu .fas::before{
+		content: '\f0da';
+		color: #000;		
+	}
+	.toggleSubmenu .fas{
+		top: 0.6rem;
+		left: 4.5rem;
+	}
+	.nav__item:hover .toggleSubmenu .fas::before{
+		content: '\f0da';
+		color: #000;
+	}
+	.toggle-Submenu:checked ~ .toggleSubmenu .fas::before{
+		content: '\f0d7';
+	}
+	.toggle-Submenu-2:checked ~ .toggleSubmenu-2 .fas::before{
+		content: '\f0d7';
+	}	
+	.nav__link {
+		color: #454545;
+	}
+	.nav__item:hover .subMenu,
+	.subMenu__item:hover .subMenu-2 {
+		display: none;	
+	}
+	.subMenu::before,
+	.subMenu-2::before{
+		display: none;
+	}	
+	.toggle-Submenu:checked ~ .subMenu,
+	.toggle-Submenu-2:checked ~ .subMenu-2 {
+		display: block;
+		position: relative;
+		width: 100%;
+		top: 0.25rem;
+		left: 0rem;
+		border-top: 1px solid #D5CABA;		
+	}	
+	.toggleSubmenu,
+	.toggleSubmenu-2{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block;
+	}
+	.subMenu__item{
+		position: relative;
+	}
+	.subMenu__item .fas{
+		position: absolute;
+		top: 0.6rem;
+		left: 6.5rem;
+	}	
+	.subMenu__item:hover,
+	.subMenu-2__item:hover {
+		background-color: #EAE1D2;
+	}			
+	.slider__content {	
+		padding: 2.5rem 0.625rem;		
+	}
+	.wrap__content {
+		max-width: 27rem;
+		padding: 1.625rem;
+	}
+	.slider__content-headline {
+		font-size: 1.2rem;
+	}
+	.slider__content-text {
+		font-size: 1rem;
+	}
+	.type__headline,
+	.type__description {
+		font-size: 95%;
+	}
+}
+
+@media screen and (max-width: 768px) {	
+	.services {
+		flex-wrap: wrap;
+	}
+	.type {
+		width: 48.5%;
+	}
+	.news__content {
+		font-size: 80%;
+	}
+	.footer-top__content {		
+		flex-wrap: wrap;		
+	}
+	.navigation {
+		padding-right: 1.375rem;
+		padding-bottom: 2rem;
+	}	
+}
+
+@media screen and (max-width: 640px){
+	.portfolio__slider{
+	max-width: 15rem;	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.wrap__content{
+		margin-left: 0;
+	}
+	.slider_1 .owl-nav{
+		display: none;
+	}
+	.icon__picture{
+		width: 60%;
+	}
+				
+	.portfolio-controls{	
+		bottom: -1.2rem;
+	}	
+	.controls-prev,
+	.controls-next{	
+		padding-top: 0.2rem;
+	}	
+	.news__content {
+		display: block;
+	}
+	.news__block {
+		width: 100%;
+		font-size: 150%;
+		margin-bottom: 2rem;
+	}
+	.footer-top__content {
+		flex-direction: column;
+		align-items: center;	
+	}
+	.navigation,
+	.contacts {
+		padding-bottom: 0.7rem;
+	}
+	.contacts__headline {
+		padding-left: 3rem;
+	}	
+	.form_name,
+	.form_mail,
+	.form_phone,
+	.form_massage {		
+		margin: 0.3125rem 0;		
+	}
+	.form_submit {
+		margin-left: 4.4rem;
+	}	
+}
+
+@media screen and (max-width: 480px) {
+	.slider__content-headline,
+	.slider__content-text{
+		font-size: 110%;
+	}
+	.phone-namber,
+	.email-address,
+	.search__headline,
+	.search__button,
+	.article-text,
+	.headline__news-content,
+	.news-text,
+	.button{
+		font-size: 90%;
+	}	
+	.header__contact {
+		flex-direction: column;
+		align-items: center;
+	}
+	.logo {
+		width: 213px;
+		margin-top: 0.7rem;
+	}
+	.nav{
+		padding: 0.5rem 0;
+	}	
+	.type {
+		width: 100%;
+	}
+	.search__headline {
+		font-size: 1.8rem;
+	}
+	.search__button {
+		padding: 0.75rem 0.6875rem 0.75rem 2.5rem;
+		background-position: 0.8125rem;
+	}	
+	.article__content {
+		display: block;
+	}
+	.news__block {		
+		font-size: 130%;
+	}
+	.footer-bottom__content {
+		text-align: center;
+	}	
+}
